@@ -1,6 +1,10 @@
 <?php
+namespace Kohana;
 
-final class Kohana_Error {
+use \ErrorException as ErrorException;
+use \Kohana_Exception as Kohana_Exception;
+
+final class Error {
   /**
    * @var  array  Types of errors to display at shutdown
    */

@@ -1,5 +1,5 @@
 <?php
-namespace Kohana\View;
+namespace Kohana\Session;
 
 use \Kohana_Exception as Kohana_Exception;
 
@@ -10,4 +10,8 @@ use \Kohana_Exception as Kohana_Exception;
  * @copyright  (c) 2009-2012 Kohana Team
  * @license    http://kohanaframework.org/license
  */
-class Exception extends Kohana_Exception {}
+class Exception extends Kohana_Exception {
+
+	const SESSION_CORRUPT = 1;
+
+}
